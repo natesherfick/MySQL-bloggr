@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MySQL_bloggr.Models;
 
 namespace MySQL_bloggr.Services
 {
@@ -6,7 +7,7 @@ namespace MySQL_bloggr.Services
   {
     public IEnumerable<Blog> GetAll()
     {
-      
+      return new List<Blog>() {new Blog() };
     }
   }
 }

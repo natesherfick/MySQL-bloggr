@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MySQL_bloggr.Models
 {
-  public class MySQL_bloggr
+  public class Blog
   {
     public int Id { get; set; }
     [Required]

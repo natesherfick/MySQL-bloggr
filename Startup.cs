@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MySQL_bloggr.Services;
 
 namespace MySQL_bloggr
 {
@@ -26,6 +27,7 @@ namespace MySQL_bloggr
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddTransient<BlogsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
