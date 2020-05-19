@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace MySQL_bloggr.Controllers
 {
   [ApiController]
-  [Route("[api/controller]")]
+  [Route("api/[controller]")]
   public class BlogsController : ControllerBase
   {
     public ActionResult<string> GetAll()
@@ -19,7 +19,6 @@ namespace MySQL_bloggr.Controllers
       }
       catch (System.Exception)
       {
-
         throw;
       }
     }
