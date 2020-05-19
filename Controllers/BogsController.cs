@@ -11,6 +11,7 @@ namespace MySQL_bloggr.Controllers
   [Route("api/[controller]")]
   public class BlogsController : ControllerBase
   {
+    [HttpGet]
     public ActionResult<string> GetAll()
     {
       try
