@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {}
+    "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {}
   },
   "projects": {
-    "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {
+    "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
+        "projectUniqueName": "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
         "projectName": "MySQL-bloggr",
-        "projectPath": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
+        "projectPath": "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
         "packagesPath": "C:\\Users\\Nate\\.nuget\\packages\\",
-        "outputPath": "C:\\source\\codeworks\\MySQL-bloggr\\obj\\",
+        "outputPath": "c:\\source\\codeworks\\MySQL-bloggr\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nate\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[0.66.0, )"

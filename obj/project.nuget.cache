@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+PcVyW4tcp8eHD1QJUUMTeLijqtxCdIvk5sOEc8JcAlS8M41Komhk0VOoOLcuf/WY8q+XLObxZoGVQO5Iv/aDQ==",
+  "dgSpecHash": "x5PLBYvNyLRsYwHIdTAJPXM14vkyRkD+UnMp0Rp7eKJy/HrboEpVSZER3RHEoLiWoF4KL89Y7yeP4rSGi/988A==",
   "success": true,
-  "projectFilePath": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
+  "projectFilePath": "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nate\\.nuget\\packages\\mysqlconnector\\0.66.0\\mysqlconnector.0.66.0.nupkg.sha512"
+    "C:\\Users\\Nate\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\Nate\\.nuget\\packages\\mysqlconnector\\0.66.0\\mysqlconnector.0.66.0.nupkg.sha512",
+    "C:\\Users\\Nate\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
