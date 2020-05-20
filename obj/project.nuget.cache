@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5hikEzbQcLaj5jWfePby8+mV7TawAv92P63YBTbbCWVxNxIiE8BEzRrC6K054iXHs2NrZrtXeMTP//sfJlGUsg==",
+  "dgSpecHash": "+PcVyW4tcp8eHD1QJUUMTeLijqtxCdIvk5sOEc8JcAlS8M41Komhk0VOoOLcuf/WY8q+XLObxZoGVQO5Iv/aDQ==",
   "success": true,
   "projectFilePath": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Nate\\.nuget\\packages\\mysqlconnector\\0.66.0\\mysqlconnector.0.66.0.nupkg.sha512"
+  ],
   "logs": []
 }

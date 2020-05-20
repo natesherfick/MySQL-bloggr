@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MySql.Data.MySqlClient;
+using MySQL_bloggr.Repositories;
 using MySQL_bloggr.Services;
 
 namespace MySQL_bloggr
@@ -18,7 +21,7 @@ namespace MySQL_bloggr
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            Configuration = configuration; 
         }
 
         public IConfiguration Configuration { get; }
@@ -27,9 +30,16 @@ namespace MySQL_bloggr
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IDbConnection>(x => CreateDbConnection());
             services.AddTransient<BlogsService>();
+            services.AddTransient<BlogsRepository>();
         }
 
+        private IDbConnection CreateDbConnection()
+        {
+            string connectionString = Configuration["db:gearhost"];
+            return new MySqlConnection(connectionString);
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
