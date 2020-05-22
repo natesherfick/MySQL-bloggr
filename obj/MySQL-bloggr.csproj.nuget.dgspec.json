@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {}
+    "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {}
   },
   "projects": {
-    "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {
+    "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
+        "projectUniqueName": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
         "projectName": "MySQL-bloggr",
-        "projectPath": "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
+        "projectPath": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
         "packagesPath": "C:\\Users\\Nate\\.nuget\\packages\\",
-        "outputPath": "c:\\source\\codeworks\\MySQL-bloggr\\obj\\",
+        "outputPath": "C:\\source\\codeworks\\MySQL-bloggr\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nate\\AppData\\Roaming\\NuGet\\NuGet.Config"

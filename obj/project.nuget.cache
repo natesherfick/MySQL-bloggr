@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x5PLBYvNyLRsYwHIdTAJPXM14vkyRkD+UnMp0Rp7eKJy/HrboEpVSZER3RHEoLiWoF4KL89Y7yeP4rSGi/988A==",
+  "dgSpecHash": "OHBznmuHbraq4JseiRjbSat2936tsnya18UlaGw215GIweRJ7UBCGGF+TklzA3/uI7BjzaQUgy6qDgi5HEFpqw==",
   "success": true,
-  "projectFilePath": "c:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
+  "projectFilePath": "C:\\source\\codeworks\\MySQL-bloggr\\MySQL-bloggr.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nate\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\Nate\\.nuget\\packages\\mysqlconnector\\0.66.0\\mysqlconnector.0.66.0.nupkg.sha512",
