@@ -33,6 +33,8 @@ namespace MySQL_bloggr
             services.AddScoped<IDbConnection>(x => CreateDbConnection());
             services.AddTransient<BlogsService>();
             services.AddTransient<BlogsRepository>();
+            services.AddTransient<TagsService>();
+            services.AddTransient<TagsRepository>();
         }
 
         private IDbConnection CreateDbConnection()

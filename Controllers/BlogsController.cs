@@ -34,6 +34,20 @@ namespace MySQL_bloggr.Controllers
       }
     }
 
+    [HttpGet("user")]
+    public ActionResult<IEnumerable<Blog>> GetBlogsByUserEmail()
+    {
+      try
+      {   
+        string creatorEmail = "testemail@static.com";
+          return Ok(_bs.GetBlogsByUserEmail(creatorEmail));
+      }
+      catch (System.Exception err)
+      {
+        return BadRequest(err.Message);
+      }
+    }
+
     [HttpGet("{id}")]
     public ActionResult<Blog> GetById(int id)
     {
@@ -52,6 +66,7 @@ namespace MySQL_bloggr.Controllers
     {
       try
       {
+        newBlog.CreatorEmail = "testemail@static.com";
         return Ok(_bs.Create(newBlog));
       }
       catch (System.Exception err)
@@ -70,6 +85,19 @@ namespace MySQL_bloggr.Controllers
       catch (System.Exception err)
       {
        return BadRequest(err.Message);
+      }
+    }
+
+    [HttpPut]
+    public ActionResult<Blog> Edit(int id, [FromBody] Blog updatedBlog)
+    {
+      try
+      {
+          return Ok(_bs.Edit(id, updatedBlog));
+      }
+      catch (System.Exception err)
+      {
+      return BadRequest(err.Message);
       }
     }
   }

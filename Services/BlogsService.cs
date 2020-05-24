@@ -32,6 +32,10 @@ namespace MySQL_bloggr.Services
       }
       return foundBlog;
     }
+    internal IEnumerable<Blog> GetBlogsByUserEmail(string creatorEmail)
+    {
+      return _repo.GetBlogsByUserEmail(creatorEmail);
+    }
 
     internal Blog Delete(int id)
     {
@@ -41,6 +45,16 @@ namespace MySQL_bloggr.Services
       return foundBlog;
       }
       throw new Exception("Sometihng went wrong with the delete...");
+    }
+
+
+    internal Blog Edit(int id, Blog updatedBlog)
+    {
+      Blog foundBlog = GetById(id);
+      foundBlog.IsPublished = updatedBlog.IsPublished;
+      foundBlog.Body = updatedBlog.Body;
+      foundBlog.Title = updatedBlog.Title;
+      return _repo.Edit(foundBlog);
     }
   }
 }
